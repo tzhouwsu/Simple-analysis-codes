@@ -20,4 +20,8 @@ this code reads a file (containing all the water molecules), and grabs several w
 this code is to calculate the inverse matrix using Gauss-Jordan method. it reads the matrix from a file.
   matrix-inverse.exe file-of-original-matrix
 
+## omp-call-chemnetworks.c
+this c-code is parallely calling chemnetworks for a bounch of snapshots using OpenMP library (-fopenmp)
+
+
 
