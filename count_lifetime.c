@@ -77,7 +77,6 @@ int main(int argc , char *argv[])
 		}
 	}
 	avglftm = (totlftm+0.0)/totnum;
-	printf("%d %d %d\n",totnum,totlftm,totsquare);
 	stddev = sqrt( (totsquare+0.0)/(totnum+0.0) - (avglftm+0.0)*(avglftm+0.0) );
 	printf("\naverage lifetime of %s is: %.5f , standard-deviation %.5f (snaps)\n\n", argv[1], avglftm, stddev);
 	fprintf(fpnew,"\n\n\naverage lifetime of %s is: %.5f snaps, standard deviation: %.5f snaps\n\n", argv[1], avglftm, stddev);
