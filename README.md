@@ -23,5 +23,9 @@ this code is to calculate the inverse matrix using Gauss-Jordan method. it reads
 ## omp-call-chemnetworks.c
 this c-code is parallely calling chemnetworks for a bounch of snapshots using OpenMP library (-fopenmp)
 
+## my_ft.f90
+this is a simple code of discrete fourier transform from time-domain in unit of ps to frequency-domain in unit of cm^-1, this is naive fourier transform, not fast fourier transform.
+
+
 
 
