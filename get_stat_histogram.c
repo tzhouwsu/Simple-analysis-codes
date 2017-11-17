@@ -54,9 +54,9 @@ int main(int argc, char *argv[])
 	{
 		line++;
 //printf("%d %s\n",line,buff);
-		token = strtok(buff," ");  // the columns are separated by space ' '
+		token = strtok(buff," \n");  // the columns are separated by space ' '
 		for(i=2;i <= icolumn;i++)
-			token = strtok(NULL," ");
+			token = strtok(NULL," \n");
 
 		value = atof(token);   // here I assume the value is in floating number
 		id = (int) ((value-istart)/ibin);
