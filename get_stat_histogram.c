@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 	double value,total;
 	char buff[FLN],*token;
 
-	Obsnum = (int *)malloc((nbins+1)*sizeof(int));
+	Obsnum = (int *)calloc(nbins+1, sizeof(int));
 
 	line=0;total=0.0;
 	for(i=1;i<=nskip;i++)
@@ -81,9 +81,9 @@ int main(int argc, char *argv[])
 	}
 
 	printf("Total lines %d - Print the output\n\n",line);
-	for(i=0;i<nbins;i++)
+	for(i=0;i<=nbins;i++)
 	{
-		printf("%f %d\n",istart+i*ibin,Obsnum[i]);
+		printf("%f %d\n",istart+(i+0.5)*ibin,Obsnum[i]);
 	}
 
 	printf("\naverage value for %d lines: %f\n",line,total/(line+0.0));
